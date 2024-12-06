@@ -1,0 +1,27 @@
+1- Imperative programming in functions like placeOrder where each step of the order placement process is defined explicitly
+
+2- declarative programming in Joi validation where we defined how data should be using scheme rather than how to validate 
+
+3-Object-Oriented Programming in Order model since we used mongoose.Schema which is a class like structure were orders can be created masaln
+
+SOLID principles:
+
+S-> single responsibility principles: each API aando one resposibility 
+example: placeOrder handles ONLY placement of order bs msh hat3ml cancel lel order masaln 
+
+O-> Open/Closed Principle:
+entities zzy classes,modules and functions should be OPEN for Extention but CLOSED for modification 
+example: extend aw add features lel order masln n3ml discount aw special offers bs the exisiting functionality msh mehtaga teb2a modified
+
+L-> Liskov Subistitution Principle:
+we can replace one type of service with another allowing flexibility 
+example:
+ easily swap the OrderService class with another class that implements the same interface (IOrderService), without breaking the code.
+ 
+I-> Interface Segregation Principle:
+methods provided by order related lel user side bs zy cancelling aw creating order
+example:
+defining the IOrderService interface, ensures that each service only implements the methods it needs. If different services require different sets of methods, you can break them into separate, smaller interfaces.
+
+D-> Dependency Invesion Principle:
+controllers depend ala abstraction (OrderService), msh by depend directly ala Order model this allows easier testing and flexibility 
